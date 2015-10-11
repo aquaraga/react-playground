@@ -12,7 +12,7 @@ var RadioOptionGroup = React.createClass({
 	render: function() {
 		var name = this.props.name;
 		return (
-			<div onChange={this.onChange}>
+			<div onChange={this.onChange} className="btn-group">
 				{this.props.options.map(function(option) {
 					return (
 						<RadioOption name={name} value={option.value} key={option.value}>

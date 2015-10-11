@@ -6,9 +6,9 @@ var RadioOption = React.createClass({
 	},
 	render: function() {
 		return(
-			<p class="radio">
+			<p className="radio">
 				<label>
-					<input type="radio" name="{this.props.name}" value={this.props.value}/>
+					<input type="radio" name={this.props.name} value={this.props.value}/>
 					{this.props.children}
 				</label>
 			</p>

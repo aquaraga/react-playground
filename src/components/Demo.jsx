@@ -8,11 +8,11 @@ var Demo = React.createClass({
 			{value: 'social', label: 'Social Media'}
 		];
 		return (
-			<div class="container">
+			<div className="container">
 				<h1>React.js Radio Group Demo</h1>
 				
 				<form>
-					<p class="h3">How did you hear about us?</p>
+					<p className="h3">How did you hear about us?</p>
 						<RadioOptionGroup
 							name="referrer"
 							other={true} 

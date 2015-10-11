@@ -9,14 +9,18 @@
 	<div id="demo">
 		
 	</div>
-	<script src="http://fb.me/react-0.14.0.min.js"></script>
-	<script src="http://fb.me/react-dom-0.14.0.min.js"></script>
+	<div id="clickCounter">
+	</div>
+	<script src="https://fb.me/react-0.14.0.js"></script>
+	<script src="https://fb.me/react-dom-0.14.0.js"></script>
 	<script src="components/RadioOptionGroup.js"></script>
 	<script src="components/RadioOption.js"></script>
 	<script src="components/RadioOtherOption.js"></script>
 	<script src="components/Demo.js"></script>
+	<script src="components/ClickCounter.js"></script>
 	<script>
-		React.render(React.createElement(Demo), document.getElementById('demo')); 
+		ReactDOM.render(React.createElement(Demo), document.getElementById('demo')); 
+		ReactDOM.render(React.createElement(ClickCounter), document.getElementById('clickCounter')); 
 	</script>
 	
 </body>

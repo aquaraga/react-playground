@@ -25,7 +25,7 @@ gulp.task('copyJsx', function() {
 
 gulp.task('watchFiles', function() {
 	gulp.watch('src/index.html', ['copyIndex']);
-	gulp.watch('src/**/*.js*', ['copyJs']);
+	gulp.watch('src/**/*.js*', ['copyJsx']);
 });
 
 gulp.task('default', ['copyIndex', 'copyJsx', 'browserSync', 'watchFiles']);
