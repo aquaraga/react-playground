@@ -13,7 +13,7 @@ var Demo = React.createClass({
 				
 				<form>
 					<p class="h3">How did you hear about us?</p>
-						<RadioOptionGroup options={options} />
+						<RadioOptionGroup other={false} options={options} />
 					<p><input type="submit"/></p>
 				</form>
 			</div>
