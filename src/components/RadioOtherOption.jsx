@@ -7,7 +7,7 @@ var RadioOtherOption = React.createClass({
 					Other
 				</label>
 				<label class="form-inline">
-					Please specify:
+					&nbsp;Please specify:
 					<input type="text" name="referrer_other"/>
 				</label>
 			</p>
