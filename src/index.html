@@ -4,14 +4,21 @@
 	<meta charset="UTF-8">
 	<title>React.js Radio Group Demo</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<script type="text/css">
+		#demo{
+			width:400px;
+			margin:30px;
+		}
+	</script>
 </head>
 <body>
 	<script src="http://fb.me/react-0.12.2.js"></script>
 	<script src="http://fb.me/JSXTransformer-0.12.2.js"></script>
+	<script type="text/jsx" src="components/RadioOption.jsx"></script>
+	<script type="text/jsx" src="components/RadioOtherOption.jsx"></script>
 	<script type="text/jsx" src="components/Demo.jsx"></script>
 	<script type="text/jsx">
-		var demo = React.createElement(Demo);
-		React.render(demo, document.getElementById('demo'));
+		React.render(<Demo />, document.getElementById('demo'));
 	</script>
 	<div id="demo">
 		
