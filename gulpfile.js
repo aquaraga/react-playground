@@ -1,5 +1,6 @@
 var gulp = require('gulp'),
-    browserSync = require('browser-sync');
+    browserSync = require('browser-sync'),
+    react = require('gulp-react');
 
 gulp.task('browserSync', function() {
 	browserSync({
@@ -15,8 +16,9 @@ gulp.task('copyIndex', function() {
 		.pipe(browserSync.reload({stream: true}));
 });
 
-gulp.task('copyJs', function() {
+gulp.task('copyJsx', function() {
 	gulp.src('src/**/*.js*')
+		.pipe(react())
 	    .pipe(gulp.dest('./build'))
 	    .pipe(browserSync.reload({stream: true}));
 });
@@ -26,4 +28,4 @@ gulp.task('watchFiles', function() {
 	gulp.watch('src/**/*.js*', ['copyJs']);
 });
 
-gulp.task('default', ['copyIndex', 'copyJs', 'browserSync', 'watchFiles']);
+gulp.task('default', ['copyIndex', 'copyJsx', 'browserSync', 'watchFiles']);
