@@ -1,4 +1,7 @@
 var RadioOtherOption = React.createClass({
+	propTypes: {
+		name: React.PropTypes.string.isRequired
+	},
 	getInitialState: function() {
 		return {
 			checked: false
@@ -20,10 +23,11 @@ var RadioOtherOption = React.createClass({
 		
 	},
 	render: function() {
+		var name = this.props.name;
 		return (
 			<p class="form-group radio">
 				<label>
-					<input ref="input" onChange={this.onChange} type="radio" name="referrer" value="other"/>
+					<input ref="input" onChange={this.onChange} type="radio" name={name} value="other"/>
 					Other
 				</label>
 				{this.state.checked && (
